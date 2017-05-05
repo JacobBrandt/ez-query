@@ -13,7 +13,8 @@
       </div>
     </li>
   </ul>
-  <button ng-if="addQuery" class="btn btn-xs btn-success" ng-click="add()">
+  <button ng-disabled="!addQuery" class="btn btn-xs btn-success" ng-click="add()">
     <i class="fa fa-plus"></i>
   </button>
+  <div class="form-group" ng-show="!addQuery">Filters can be added by capturing them from the dashboard</div>
 </div>
